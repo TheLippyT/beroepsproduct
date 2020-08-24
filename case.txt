@@ -1,0 +1,39 @@
+deze document dient als een wegwijzertje vij het bouwen van de applicatie
+
+er zijn 4 straten met auto's. elk straat heeft een sensor.
+de volgorde van oprijden van de straten luidt als volg noord,zuid,oost,west.
+
+voertuigen op de wegdek:
+noord heeft 4 voertuigen: 3 personen wagens en 1 ambulance met sirene(3de wagen).
+zuid heeft 18 voertuigen: 17 personen wagens en 1 brandweer met sirene(17de wagen).
+oost heeft 5 voertuigen; 5 personen wagens.
+west heeft 14 voertuigen: 13 personen wagens en 1 politie met sirenen(9de wagen).
+
+volgorde van speciale wagens politie - brandweer - ambulance
+verkeerslichten hebben geen invloed op de speciale wagens dus die kunnen gewoon oprijden.
+als deze oprijden dan blijven alleen de personen wagens over.
+
+noord: 3 voertuigen
+zuid: 17 voertuigen
+oost: 5 voertuigen
+west: 13 voertuigen
+
+
+verkeerslichten volgorde met sensor:
+noord: als er minder dan 5 voertuigen zijn dan kunnen all voertuigen oprijden.
+        met het vertrek van de de ambulance heeft noord 3 voertuigen. alle voertuigen kunnen oprijden
+
+zuid: als er meer dan 10 voertuigen. 10 voertuigen kunnen alleen passeren.
+        zuid heeft met het vertrek van de brandweer wagen 17 wagens. 10 autos rijden op en heeft weg zuid 7 voertuigen
+        restant
+
+oost: controleert of er voertuigen op de weg zijn. geen voertuigen dan wordt deze verkeerslicht enmalig overgeslagen
+        oost heeft maar 5 voertuigen alle 5 zullen oprijden
+
+west: combinatie van 1 en 2. geen voertuigen wordt het overgeslagen. meer dan 10 auto's kunnen 10 auto's gaan.
+        west heeft 13 voertuigen. 10 kunnen als eerst gaan
+
+
+
+volgorde: noord 3 -> zuid 10 -> oost 5 -> west 10 -> zuid 7 -> west 3
+
