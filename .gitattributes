@@ -3,30 +3,8 @@
 
 
 # enforce content type "text" to fix mixed line-endings in the repo
-*.conf            text
-*.cpp             text
-*.css             text
-*.dtd             text
-*.h               text
-*.htm             text
-*.html            text
-*.ini             text
-*.js              text
-*.json            text
-*.md              text
-*.mq4             text
-*.mq5             text
-*.mqh             text
-*.mql             text
-*.php             text
-*.phtml           text
-*.properties      text
-*.sh              text
-*.sql             text
-*.txt             text
-*.xml             text
-*.yml             text
-*.class           text
+*.java text
+*.class text
 
 
 # set content encodings
