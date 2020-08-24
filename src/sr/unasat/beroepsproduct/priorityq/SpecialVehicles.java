@@ -4,7 +4,7 @@ package sr.unasat.beroepsproduct.priorityq;
   Deze class is gemaakt voor de speciale voertuigen nl. politie-, brandweer-, ambulancewagen.
  */
 
-public class Vehicles{
+public class SpecialVehicles {
     //all standard stuff for making a object datatype
     //manually input licenseplate because generating license plate requires more code
 
@@ -12,7 +12,7 @@ public class Vehicles{
     private String vehicleName;
     private String vehicleLicensePlate;
 
-    public Vehicles(int p, String vN, String vLP){
+    public SpecialVehicles(int p, String vN, String vLP){
         this.priorityNumber = p;
         this.vehicleName = vN;
         this.vehicleLicensePlate = vLP;
@@ -41,7 +41,7 @@ public class Vehicles{
     public void setVehicleLicensePlate(String vLP) {
         this.vehicleLicensePlate = vLP;
     }
-    public boolean equals(Vehicles other){
+    public boolean equals(SpecialVehicles other){
         return this.getPriorityNumber() == other.getPriorityNumber();
     }
 

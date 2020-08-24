@@ -1,21 +1,18 @@
 package sr.unasat.beroepsproduct.priorityq;
-import sr.unasat.beroepsproduct.priorityq.Vehicles;
-
-import java.io.IOException;
 
 public class PriorityQueue {
     private int maxSize;
-    private Vehicles[] queArray;
+    private SpecialVehicles[] queArray;
     private int nVehicles;
 
 
     public PriorityQueue(int maxSize) {
         this.maxSize = maxSize;
-        queArray = new Vehicles[this.maxSize];
+        queArray = new SpecialVehicles[this.maxSize];
         nVehicles = 0;
     }
     //--------------------------------------------------------------------------------------
-    public void insert(Vehicles vehicles){
+    public void insert(SpecialVehicles vehicles){
         int i;
 
         if (nVehicles == 0) //if there is nothing start at 0
@@ -34,11 +31,11 @@ public class PriorityQueue {
         }
     }
     //--------------------------------------------------------------------------------------
-    public Vehicles remove(){
+    public SpecialVehicles remove(){
         return queArray[--nVehicles];
     } //regular removing vehicles from the queue
     //--------------------------------------------------------------------------------------
-    public Vehicles peekmin(){
+    public SpecialVehicles peekmin(){
         return queArray[nVehicles-1];
     } //peek method
     //--------------------------------------------------------------------------------------
