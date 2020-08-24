@@ -2,6 +2,7 @@ package sr.unasat.beroepsproduct.linkedl;
 
 public class LinkList {
     private Link first;
+    private Link last;
 
     // ref to first link on list
 // -------------------------------------------------------------
@@ -9,6 +10,7 @@ public class LinkList {
     // constructor
 
         first = null;
+        last = null;
         // no items on list yet
     }
     // -------------------------------------------------------------
@@ -19,23 +21,28 @@ public class LinkList {
     }
     // -------------------------------------------------------------
 // insert at start of list
-    public void insertFirst(RegularVehicles rV)
+    public void insertAtTheEnd(RegularVehicles regularVehicles)
     {
         // make new link
-        Link newLink = new Link(rV);
-        newLink.next = first;
-        // newLink --> old first
-        first = newLink;
-        // first --> newLink
+        Link newLink = new Link(regularVehicles);
+        if(isEmpty()) {
+            first = newLink;
+        } else{
+            last.next = newLink;
+            last = newLink;
+        }
     }
     // -------------------------------------------------------------
-    public Link deleteFirst()
+    public RegularVehicles deleteFirst()
     // delete first item
     {
         // (assumes list not empty)
-        Link temp = first;
+        RegularVehicles temp = first.regularVehicles;
         // save reference to link
         first = first.next;
+//        if(first.next == null){
+//            first = first.next;
+//        }
         // delete it: first-->old next
         return temp;
         // return deleted link
@@ -55,5 +62,8 @@ public class LinkList {
             current = current.next; // move to next link
         }
         System.out.println("");
+    }
+    public String peekfront(){
+        return first.regularVehicles.getLicensePlate();
     }
 }
