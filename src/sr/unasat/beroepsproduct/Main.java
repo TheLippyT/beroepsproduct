@@ -26,26 +26,6 @@ public class Main {
 
 
 
-        LinkList theList = new LinkList(); // make new list
-        //w=wegdek , cN=carName , lP=LicensePlate
-        theList.insertFirst(new RegularVehicles('N',"car 3","PK 87-23"));
-        theList.insertFirst(new RegularVehicles('N',"car 2","PK 98-21"));
-        theList.insertFirst(new RegularVehicles('N',"car 1","PK 78-23"));
-
-        theList.displayList();
-        // display list
-        while( !theList.isEmpty() )
-        // until it’s empty,
-        {
-            Link aLink = theList.deleteFirst();
-            // delete link
-            System.out.print("Deleted");
-            // display it
-            aLink.displayLink();
-            System.out.println("");
-        }
-        theList.displayList();
-        // display list
     } // end main()
 
 
