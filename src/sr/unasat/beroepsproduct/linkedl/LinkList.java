@@ -5,7 +5,7 @@ public class LinkList {
     private Link last;
 
     // ref to first link on list
-// -------------------------------------------------------------
+    // -------------------------------------------------------------
     public LinkList(){
     // constructor
 
@@ -47,7 +47,7 @@ public class LinkList {
         return temp;
         // return deleted link
     }
-
+    // -------------------------------------------------------------
 
     public void displayList()
     {
@@ -63,6 +63,8 @@ public class LinkList {
         }
         System.out.println("");
     }
+    // -------------------------------------------------------------
+
     public String peekfront(){
         return first.regularVehicles.getLicensePlate();
 
