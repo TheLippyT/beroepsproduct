@@ -51,7 +51,7 @@ public class LinkList {
 
     public void displayList()
     {
-        System.out.print("List (first-->last): ");
+//        System.out.print("List (first-->last): ");
         Link current = first;
         // start at beginning of list
         while(current != null)
@@ -65,5 +65,6 @@ public class LinkList {
     }
     public String peekfront(){
         return first.regularVehicles.getLicensePlate();
+
     }
 }

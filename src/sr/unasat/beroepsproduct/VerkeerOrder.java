@@ -9,11 +9,11 @@ public class VerkeerOrder {
             switch(wegIndex){
                 case 0:
                     System.out.println(Constants.wegen[wegIndex].getWeg());
-                    Constants.wegen[wegIndex].getLinkQueue().display();
+                    Constants.wegen[wegIndex].getvehicleQueue().display();
                     break;
                 case 1:
                     System.out.println("\n" + Constants.wegen[wegIndex].getWeg());
-                    Constants.wegen[wegIndex].getLinkQueue().display();
+                    Constants.wegen[wegIndex].getvehicleQueue().display();
                     break;
             }
         }

@@ -15,7 +15,7 @@ public class Wegen {
         return weg;
     }
 
-    public LinkQueue getLinkQueue() {
+    public LinkQueue getvehicleQueue() {
         return linkQueue;
     }
 }
