@@ -1,4 +1,6 @@
-package sr.unasat.beroepsproduct.linkedl;
+package sr.unasat.beroepsproduct.objects;
+
+import sr.unasat.beroepsproduct.queuelink.LinkQueue;
 
 public class Wegen {
     private String weg;

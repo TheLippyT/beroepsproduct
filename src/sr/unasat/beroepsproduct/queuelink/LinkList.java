@@ -1,5 +1,7 @@
-package sr.unasat.beroepsproduct.linkedl;
+package sr.unasat.beroepsproduct.queuelink;
 //better known as the firstlast class in the book
+
+import sr.unasat.beroepsproduct.objects.RegularVehicles;
 
 public class LinkList {
     private Link first;

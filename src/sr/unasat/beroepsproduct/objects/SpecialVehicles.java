@@ -1,4 +1,4 @@
-package sr.unasat.beroepsproduct.priorityq;
+package sr.unasat.beroepsproduct.objects;
 
 /*
   Deze class is gemaakt voor de speciale voertuigen nl. politie-, brandweer-, ambulancewagen.
@@ -48,10 +48,8 @@ public class SpecialVehicles {
 
     @Override
     public String toString() {
-        return "Vehicles{" +
-                "priorityNumber=" + priorityNumber +
-                ", vehicleName='" + vehicleName + '\'' +
-                ", vehicleLicensePlate='" + vehicleLicensePlate + '\'' +
-                '}'+ " rijd " +"\n";
+        return
+               vehicleName + '\'' +
+                ", vehicleLicensePlate='" + vehicleLicensePlate + '\''+ " rijd door " +"\n";
     }
 }

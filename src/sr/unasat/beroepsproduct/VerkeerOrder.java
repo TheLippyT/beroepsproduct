@@ -1,8 +1,7 @@
 package sr.unasat.beroepsproduct;
 
-import sr.unasat.beroepsproduct.linkedl.RegularVehicles;
-import sr.unasat.beroepsproduct.linkedl.Wegen;
-import sr.unasat.beroepsproduct.util.Constants;
+import sr.unasat.beroepsproduct.objects.RegularVehicles;
+import sr.unasat.beroepsproduct.objects.Wegen;
 
 import static sr.unasat.beroepsproduct.util.Constants.light;
 import static sr.unasat.beroepsproduct.util.Constants.wegen;
@@ -22,7 +21,7 @@ public class VerkeerOrder {
             drive(wegen);
 
             if (wegdekLeeg(wegen)) {
-                System.out.println("\n          ****Alle auto's op wegdek " + wegen.getWeg() + " zijn opgereden****");
+                System.out.println("\n" + wegen.getWeg() + " is empty");
                 break;
             }
         }
@@ -37,7 +36,7 @@ public class VerkeerOrder {
                 drive(wegen);
 
                 if (wegdekLeeg(wegen)) {
-                    System.out.println("\n          ****Alle auto's op wegdek " + wegen.getvehicleQueue() + " zijn opgereden****");
+                    System.out.println("\n          ****Alle auto's op wegdek " + wegen.getWeg() + " zijn opgereden****");
                 }
             }
         } else {
@@ -116,22 +115,22 @@ public class VerkeerOrder {
                 switch (wegdekIndex) {
 
                     case 0:
-                        System.out.println("\n\n --------------GROENLICHT! De voertuigen op wegdek " + wegen[wegdekIndex].getWeg() + " mogen oprijden--------------\n\n");
+                        System.out.println("\n\n wegdek " + wegen[wegdekIndex].getWeg() + " mag oprijden\n\n");
                         noord(wegen[wegdekIndex]);
 
                         break;
                     case 1:
-                        System.out.println("\n\n --------------GROENLICHT! De voertuigen op wegdek " + wegen[wegdekIndex].getWeg() + " mogen oprijden--------------\n\n");
+                        System.out.println("\n\n wegdek " + wegen[wegdekIndex].getWeg() + " mag oprijden\n\n");
                         zuid(wegen[wegdekIndex]);
 
                         break;
                     case 2:
-                        System.out.println("\n\n --------------GROENLICHT! De voertuigen op wegdek " + wegen[wegdekIndex].getWeg() + " mogen oprijden--------------\n\n");
+                        System.out.println("\n\n wegdek " + wegen[wegdekIndex].getWeg() + " mag oprijden\n\n");
                         oost(wegen[wegdekIndex]);
 
                         break;
                     case 3:
-                        System.out.println("\n\n --------------GROENLICHT! De voertuigen op wegdek " + wegen[wegdekIndex].getWeg() + " mogen oprijden--------------\n\n");
+                        System.out.println("\n\n wegdek " + wegen[wegdekIndex].getWeg() + " mag oprijden\n\n");
                         west(wegen[wegdekIndex]);
                         wegdekIndex = -1;                                                                                //als allemaal aan de beurt zijn geweest, start weer bij wegdek noord
                         break;

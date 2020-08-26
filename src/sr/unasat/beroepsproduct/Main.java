@@ -1,10 +1,8 @@
 package sr.unasat.beroepsproduct;
 
-import sr.unasat.beroepsproduct.linkedl.Link;
-import sr.unasat.beroepsproduct.linkedl.LinkList;
-import sr.unasat.beroepsproduct.linkedl.RegularVehicles;
-import sr.unasat.beroepsproduct.priorityq.PriorityQueue;
-import sr.unasat.beroepsproduct.priorityq.SpecialVehicles;
+import sr.unasat.beroepsproduct.objects.RegularVehicles;
+import sr.unasat.beroepsproduct.specialvehicles.PriorityQueue;
+import sr.unasat.beroepsproduct.objects.SpecialVehicles;
 
 import java.io.IOException;
 

@@ -1,4 +1,6 @@
-package sr.unasat.beroepsproduct.linkedl;
+package sr.unasat.beroepsproduct.queuelink;
+
+import sr.unasat.beroepsproduct.objects.RegularVehicles;
 
 public class LinkQueue {
     private LinkList linkList;

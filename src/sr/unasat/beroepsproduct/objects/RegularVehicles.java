@@ -1,4 +1,4 @@
-package sr.unasat.beroepsproduct.linkedl;
+package sr.unasat.beroepsproduct.objects;
 
 /*
 deze class is gemaakt om objects te maken van de andere voertuigen. de niet speciale voertuigen deze zijn

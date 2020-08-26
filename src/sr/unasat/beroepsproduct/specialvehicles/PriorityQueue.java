@@ -1,4 +1,6 @@
-package sr.unasat.beroepsproduct.priorityq;
+package sr.unasat.beroepsproduct.specialvehicles;
+
+import sr.unasat.beroepsproduct.objects.SpecialVehicles;
 
 public class PriorityQueue {
     private int maxSize;

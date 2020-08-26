@@ -1,6 +1,6 @@
 package sr.unasat.beroepsproduct.util;
 
-import sr.unasat.beroepsproduct.linkedl.Wegen;
+import sr.unasat.beroepsproduct.objects.Wegen;
 
 public class Constants {
     public static final String[] light = new String[]{"n","o","z","w"};
