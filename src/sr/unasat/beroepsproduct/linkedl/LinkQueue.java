@@ -2,6 +2,7 @@ package sr.unasat.beroepsproduct.linkedl;
 
 public class LinkQueue {
     private LinkList linkList;
+    private int nVehicles;
     // -------------------------------------------------------------
 
     public LinkQueue(){
@@ -28,6 +29,7 @@ public class LinkQueue {
         linkList.displayList();
     }
     // -------------------------------------------------------------
+    public int getnVehicles(){ return nVehicles;}
 
 
 }
