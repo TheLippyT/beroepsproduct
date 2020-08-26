@@ -29,9 +29,43 @@ public class Main {
         wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
         wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
         wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
         wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
 
         wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
         wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
 
         VerkeerOrder verkeerOrder = new VerkeerOrder();

@@ -19,7 +19,7 @@ public class VerkeerOrder {
     private void defaultDrive(Wegen wegen) {                                                                       //per wegdek blijft t licht op groen zodat er maximaal 5 auto's oprijden
 
         for (int i = 0; i < 5; i++) {
-            defaultDrive(wegen);
+            drive(wegen);
 
             if (wegdekLeeg(wegen)) {
                 System.out.println("\n          ****Alle auto's op wegdek " + wegen.getWeg() + " zijn opgereden****");
