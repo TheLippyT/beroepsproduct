@@ -1,4 +1,5 @@
 package sr.unasat.beroepsproduct.linkedl;
+//better known as the firstlast class in the book
 
 public class LinkList {
     private Link first;
@@ -43,7 +44,7 @@ public class LinkList {
 //        if(first.next == null){
 //            first = first.next;
 //        }
-        // delete it: first-->old next
+
         return temp;
         // return deleted link
     }

@@ -9,24 +9,18 @@ zich bevinden).
  */
 
 public class RegularVehicles {
-    private char wegdek;
     private String carName;
     private String licensePlate;
 
+
     public RegularVehicles(char w, String cN, String lP){
-       this.wegdek = w;
+
        this.carName = cN;
        this.licensePlate = lP;
 
     }
 
-    public char getWegdek() {
-        return wegdek;
-    }
 
-    public void setWegdek(char w) {
-        this.wegdek = wegdek;
-    }
 
     public String getCarName() {
         return carName;
@@ -44,10 +38,11 @@ public class RegularVehicles {
         this.licensePlate = licensePlate;
     }
 
+
+
     @Override
     public String toString() {
         return "\n" + "RegularVehicles{" +
-                "wegdek=" + wegdek +
                 ", carName='" + carName + '\'' +
                 ", licensePlate='" + licensePlate + '\'' +
                 '}';

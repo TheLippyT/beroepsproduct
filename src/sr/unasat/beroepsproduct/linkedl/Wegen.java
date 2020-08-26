@@ -1,17 +1,17 @@
 package sr.unasat.beroepsproduct.linkedl;
 
 public class Wegen {
-    private char weg;
+    private String weg;
     private LinkQueue linkQueue = new LinkQueue();
 
-    public Wegen(char weg){
+    public Wegen(String weg){
         this.weg = weg;
     }
     public void insertIntoWeg(RegularVehicles regularVehicles){
         this.linkQueue.insert(regularVehicles);
     }
 
-    public char getWeg() {
+    public String getWeg() {
         return weg;
     }
 
