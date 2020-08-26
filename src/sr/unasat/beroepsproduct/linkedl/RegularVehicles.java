@@ -13,7 +13,7 @@ public class RegularVehicles {
     private String licensePlate;
 
 
-    public RegularVehicles(char w, String cN, String lP){
+    public RegularVehicles(String cN, String lP){
 
        this.carName = cN;
        this.licensePlate = lP;

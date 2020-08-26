@@ -4,6 +4,7 @@ package sr.unasat.beroepsproduct.linkedl;
 public class LinkList {
     private Link first;
     private Link last;
+    private int nVehicles =0;
 
     // ref to first link on list
     // -------------------------------------------------------------
@@ -26,12 +27,16 @@ public class LinkList {
     {
         // make new link
         Link newLink = new Link(regularVehicles);
-        if(isEmpty()) {
+        Link previous = null;
+        Link current = first;
+
+        if(previous==null) {
             first = newLink;
         } else{
-            last.next = newLink;
-            last = newLink;
+            previous.next = newLink;
+
         }
+        newLink.next = current;
     }
     // -------------------------------------------------------------
     public RegularVehicles deleteFirst()

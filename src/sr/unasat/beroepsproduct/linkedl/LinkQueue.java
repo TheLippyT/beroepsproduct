@@ -16,11 +16,17 @@ public class LinkQueue {
     // -------------------------------------------------------------
 
     public void insert(RegularVehicles regularVehicles){
+
         linkList.insertAtTheEnd(regularVehicles);
+        nVehicles++;
     }
     // -------------------------------------------------------------
 
     public RegularVehicles delete(){
+        nVehicles--;
+        if (isEmpty()){
+            return null;
+        }
         return linkList.deleteFirst();
     }
     // -------------------------------------------------------------

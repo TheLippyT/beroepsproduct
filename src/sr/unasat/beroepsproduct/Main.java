@@ -8,6 +8,8 @@ import sr.unasat.beroepsproduct.priorityq.SpecialVehicles;
 
 import java.io.IOException;
 
+import static sr.unasat.beroepsproduct.util.Constants.wegen;
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
@@ -23,6 +25,17 @@ public class Main {
             System.out.print(item + " ");
         }
         System.out.println("");
+
+        wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[0].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[1].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+
+        wegen[2].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+        wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
+
+        VerkeerOrder verkeerOrder = new VerkeerOrder();
+        verkeerOrder.stoplicht();
 
 
     } // end main()
