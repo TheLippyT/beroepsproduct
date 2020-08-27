@@ -40,6 +40,19 @@ public class LinkList {
         }
         newLink.next = current;
     }
+    public void insertIntoStack(RegularVehicles regularVehicles) {
+        Link newLink = new Link(regularVehicles);
+        Link previous = null;
+        Link current = first;
+
+        if (previous == null) {
+            first = newLink;
+        } else {
+            previous.next = newLink;
+
+        }
+        newLink.next = current;
+    }
     // -------------------------------------------------------------
     public RegularVehicles deleteFirst()
     // delete first item

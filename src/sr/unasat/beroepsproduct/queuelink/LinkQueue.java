@@ -23,6 +23,10 @@ public class LinkQueue {
         nVehicles++;
     }
     // -------------------------------------------------------------
+    public void insertIntoStack(RegularVehicles regularVehicles){
+        linkList.insertIntoStack(regularVehicles);
+        nVehicles++;
+    }
 
     public RegularVehicles delete(){
         nVehicles--;

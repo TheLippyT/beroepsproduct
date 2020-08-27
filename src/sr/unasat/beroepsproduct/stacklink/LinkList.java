@@ -5,6 +5,7 @@ import sr.unasat.beroepsproduct.queuelink.Link;
 
 public class LinkList {
     private Link first;
+    private int nVehicles=0;
 
     public LinkList(){
         first = null;
@@ -14,12 +15,17 @@ public class LinkList {
     }
     public void insertFirst(RegularVehicles regularVehicles){
         Link newLink = new Link(regularVehicles);
-        newLink.next =  first;
-        first = newLink;
+        if(isEmpty()){
+            first = newLink;
+        } else{
+            newLink.next = first;
+            first = newLink;
+        }
     }
     public RegularVehicles deletFirst(){
         Link temp = first;
         first = first.next;
+        nVehicles--;
         return temp.regularVehicles;
     }
     public void displayList(){

@@ -67,8 +67,7 @@ public class Main {
         wegen[3].insertIntoWeg(new RegularVehicles("car 1","PK 97-31"));
 
         VerkeerOrder verkeerOrder = new VerkeerOrder();
-        verkeerOrder.stoplicht();
-
+        verkeerOrder.reverse();
 
     } // end main()
 

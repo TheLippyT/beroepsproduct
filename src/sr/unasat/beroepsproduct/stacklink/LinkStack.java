@@ -4,6 +4,7 @@ import sr.unasat.beroepsproduct.objects.RegularVehicles;
 
 public class LinkStack {
     private LinkList linkList;
+    private int nVehicles;
 
     public LinkStack(){
         linkList = new LinkList();
@@ -12,11 +13,13 @@ public class LinkStack {
     // put item on top of stack
     {
         linkList.insertFirst(regularVehicles);
+        nVehicles++;
     }
     //--------------------------------------------------------------
     public RegularVehicles pop()
     // take item from top of stack
     {
+        nVehicles--;
         return linkList.deletFirst();
     }
     //--------------------------------------------------------------
@@ -31,6 +34,7 @@ public class LinkStack {
         System.out.print("Stack (top-->bottom): ");
         linkList.displayList();
     }
+    public int getnVehicles(){return nVehicles;}
 //--------------------------------------------------------------
 } // end class LinkStack
 
